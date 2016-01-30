@@ -75,8 +75,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.038356163">
-              <caret line="1" column="28" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.3452055">
+              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -147,8 +147,8 @@
         <option value="$PROJECT_DIR$/app/Models/loginModel.js" />
         <option value="$PROJECT_DIR$/app/Models/gameModel.js" />
         <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/env-defaults.json" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -632,8 +632,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.038356163">
-          <caret line="1" column="28" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.3452055">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
           <folding />
         </state>
       </provider>

@@ -16,7 +16,8 @@
     "kerberos": "0.0.18",
     "mongoose": "^4.3.7",
     "passport": "^0.3.2",
-    "passport-custom": "^1.0.5"
+    "passport-custom": "^1.0.5",
+    "socket.io": "^1.4.5"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
@@ -27,7 +28,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
-},
+  },
   "repository": {
     "type": "git",
     "url": "git@bitbucket.org:duxilio/taplicious-server"
