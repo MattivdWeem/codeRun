@@ -3,15 +3,20 @@
   "version": "1.0.0",
   "description": "Making concepts #junction2015",
   "private": true,
-  "main": "web.js",
+  "main": "index.js",
   "dependencies": {
     "body-parser": "^1.9.0",
+    "connect-ensure-login": "^0.1.1",
     "cors": "^2.5.2",
     "crypto": "0.0.3",
     "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "faker": "^3.0.1",
+    "helmet": "^1.1.0",
     "kerberos": "0.0.18",
     "mongoose": "^4.3.7",
-    "passport": "^0.3.2"
+    "passport": "^0.3.2",
+    "passport-custom": "^1.0.5"
   },
   "devDependencies": {
     "grunt": "~0.4.2",

@@ -1,6 +1,19 @@
 'use strict'
 
-var serverDetails = require('./inc/server/start')({
+
+
+
+// server setup
+var schemas     = require('./database/schemas'),
+    mongoose    =  require('mongoose'),
+    settings    = require('./env-defaults.json'),
+    connect     = require('./database/connect')(mongoose, process.env.MONGO_URI || settings.MONGO_URI),
+    secure = {
+        salt: settings.salt,
+        secret: settings.secret
+    };
+
+var serverDetails = require('./app/start')({
     port: process.env.PORT || settings.PORT,
     http: require('http'),
     https: require('https'),
@@ -8,22 +21,12 @@ var serverDetails = require('./inc/server/start')({
     express: require('express')
 });
 
-
-// server setup
-var schemas     = require('./inc/db/schemas'),
-    mongoose    =  require('mongoose'),
-    settings = require('./env-defaults.json'),
-    connect     = require('./inc/db/connect')(mongoose, process.env.MONGO_URI || settings.MONGO_URI),
-    secure = {
-        salt: settings.salt,
-        secret: settings.secret
-    };
-
 //init the API
-require('./inc/server/api/v1/init').init({
+require('./app/init').init({
     clientHost: process.env.CLIENT_URI || settings.CLIENT_URI,
     mongoose: mongoose,
     app: serverDetails.app,
+    models: require('./database/models')(schemas, mongoose),
     io: serverDetails.io,
     http: serverDetails.http,
     https: serverDetails.https,
@@ -33,7 +36,8 @@ require('./inc/server/api/v1/init').init({
     session: require('express-session'),
     async: require('async'),
     crypto: require('crypto'),
-    helmet: require('helmet')
+    helmet: require('helmet'),
+    bodyParser: require('body-parser')
 });
 
 serverDetails.app.get('*', function (req, res) {
