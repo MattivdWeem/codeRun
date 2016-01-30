@@ -44,10 +44,12 @@ module.exports = {
                 required: true
             },
             Distance: {
-                type: Number
+                type: Number,
+                default: 0
             },
             Deaths: {
-                type: Number
+                type: Number,
+                default: 0
             }
         }]
     }

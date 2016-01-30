@@ -3,8 +3,25 @@ module.exports = function (app, options, methods, Models, Controllers){
     var module = {}
     var Game = options.models.Game;
 
-    module.join = function(user, session){
+    /**
+     *
+     * @param user
+     * @param session
+     * @param callback
+     */
+    module.join = function(user, session, callback){
 
+        Game.findOneAndUpdate(
+            { Token: session },
+            {$push: {"Players":
+                {
+                    userObjectId: user._id
+                }
+            }},
+            {safe: true, upsert: true},
+            function(err, docs){
+                return callback(err,docs);
+            });
 
     }
 
