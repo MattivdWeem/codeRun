@@ -18,7 +18,7 @@ module.exports = function (app, options, methods, Models, Controllers) {
     }
 
     /**
-     * 
+     *
      * @param req
      * @param res
      * @param lobby

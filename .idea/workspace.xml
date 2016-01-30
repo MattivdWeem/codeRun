@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b102a86-1e8d-46db-8d54-f968d034b361" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Controllers/gameController.js" afterPath="$PROJECT_DIR$/app/Controllers/gameController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/gameModel.js" afterPath="$PROJECT_DIR$/app/Models/gameModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Routes/gameRoute.js" afterPath="$PROJECT_DIR$/app/Routes/gameRoute.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/schemas.js" afterPath="$PROJECT_DIR$/database/schemas.js" />
-    </list>
+    <list default="true" id="7b102a86-1e8d-46db-8d54-f968d034b361" name="Default" comment="" />
     <ignored path="accenture.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -30,8 +25,8 @@
       <file leaf-file-name="gameController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Controllers/gameController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.51915455">
-              <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.8150594">
+              <caret line="28" column="58" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -594,8 +589,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Controllers/gameController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51915455">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.8150594">
+          <caret line="28" column="58" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
           <folding />
         </state>
       </provider>
