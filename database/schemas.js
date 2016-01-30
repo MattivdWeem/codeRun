@@ -33,9 +33,10 @@ module.exports = {
         }
     },
     Game:{
-        Url:{
+        Token:{
             type: String,
-            required: true
+            required: true,
+            unique: true
         },
         Players: [{
             userObjectId:{

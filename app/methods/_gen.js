@@ -94,6 +94,22 @@ module.exports = function(app, options, methods){
         return Math.floor((Math.random() * max) + 1);
     }
 
+    methods.randomString = function(length){
+        if(typeof length !== 'number') length = 41;
+        if(length <= 16){
+            return Math.random().toString(36).substring(2,length+2);
+        }
+        var iterations = Math.ceil(length / 16),
+            outputStr = '';
+
+        for(var i = 0; i < iterations; i++){
+            outputStr += Math.random().toString(36).substring(2,18);
+        }
+
+        if(outputStr.length > length) outputStr = outputStr.substring(0,length);
+        return outputStr;
+    }
+
 
 
 }

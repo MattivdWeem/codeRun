@@ -7,11 +7,19 @@ module.exports = function (app, options, methods, Models, Controllers) {
      * @param req
      * @param res
      */
-    controller.join = function (req, res) {
+    controller.create = function (req, res) {
         var m = Models.gameModel;
-
+        m.create(function (err, docs){
+            if (!err){
+                methods.send(res, docs,true);
+            }
+        });
 
     }
 
-    var gameController = controller;
+    controller.join = function (req, res) {
+        var m = Models.gameModel;
+    }
+
+    Controllers.gameController = controller;
 }

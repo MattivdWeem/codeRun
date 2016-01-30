@@ -4,9 +4,8 @@ module.exports = function(app, options, methods, Models, Controllers){
      * Gets all players inside your current game
      */
     app.get('/game', function(req, res){
-        return Controllers.loginController.index(req, res);
+        return Controllers.gameController.create(req, res);
     });
-
 
     /**
      * Joins a specific game lobby
