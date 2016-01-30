@@ -1,7 +1,7 @@
 {
-  "name": "taplicious-server",
+  "name": "coderun-server",
   "version": "1.0.0",
-  "description": "Making concepts #junction2015",
+  "description": "Making concepts #accenturehackathon2016",
   "private": true,
   "main": "index.js",
   "dependencies": {
