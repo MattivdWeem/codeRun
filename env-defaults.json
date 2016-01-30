@@ -1,0 +1,7 @@
+{
+  "name" : "codeRun",
+  "secret": "[x30012016]@$%^&*&YTRESWDEFGTR#egertfgds$^T#$_",
+  "salt": "!@s#f23$s@#$@#$#$%3423%23423$$2342d3$@#$%^&*f%s32$@#$dfU25364gfdg23sdfi",
+  "PORT": 9000,
+  "MONGO_URI": "195.169.162.121:27017/codeRun"
+}
