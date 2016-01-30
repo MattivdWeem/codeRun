@@ -13,7 +13,7 @@ App.init = function(options){
         Controllers     = {},
         app        	    = options.app;
 
-    // initialize the server with the right corse headers and body parsing abbility's
+    // initialize the server with the right cors headers and body parsing abbility's
     app.use(options.bodyParser.urlencoded({ extended: true }));
     app.use(options.bodyParser.json());
     app.use(options.helmet());

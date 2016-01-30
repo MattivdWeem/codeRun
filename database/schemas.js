@@ -9,72 +9,19 @@ module.exports = {
             type: String
 
         },
-        first_name:{
+        first_name: {
             type: String,
             required: true
         },
-        last_name:{
+        last_name: {
             type: String,
             required: true
         },
-        birthday:{
+        birthday: {
             type: Date,
             required: false
         },
-        score: {
-            type: Number,
-            default: 0,
-            required: true
-        },
-        currentJourney: [{
-            datetime: {
-                type: Date,
-                default: Date.now,
-                required: true
-            },
-            speed: {
-                type: Number
-            },
-            location: {
-                lon: {
-                    type: Number,
-                    required: true
-                },
-                lat: {
-                    type: Number,
-                    required: true
-                }
-            },
-            score: {
-                type: Number,
-                required: true
-            }
-        }],
-        allJourneys: [{
-            datetime: {
-                type: Date,
-                required: true
-            },
-            speed: {
-                type: Number
-            },
-            location: {
-                lon: {
-                    type: Number,
-                    required: true
-                },
-                lat: {
-                    type: Number,
-                    required: true
-                }
-            },
-            score: {
-                type: Number,
-                required: true
-            }
-        }]
     },
-
     Session: {
         Token: {
             type: String,
@@ -84,6 +31,24 @@ module.exports = {
             type: Object,
             required: true
         }
+    },
+    Game:{
+        Url:{
+            type: String,
+            required: true
+        },
+        Players: [{
+            userObjectId:{
+                type:Object,
+                required: true
+            },
+            Distance: {
+                type: Number
+            },
+            Deaths: {
+                type: Number
+            }
+        }]
     }
 
 }
