@@ -7,7 +7,7 @@
 var schemas     = require('./database/schemas'),
     mongoose    =  require('mongoose'),
     settings    = require('./env-defaults.json'),
-    connect     = require('./database/connect')(mongoose, process.env.MONGO_URI || settings.MONGO_URI),
+    connect     = require('./database/connect')(mongoose, process.env.MONGOLAB_URI || process.env.MONGO_URI || settings.MONGO_URI),
     secure = {
         salt: settings.salt,
         secret: settings.secret
